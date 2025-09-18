@@ -1,20 +1,44 @@
-# Initalize git 
-```git init ```
-
-Check Status command 
-$ git status
-
-# add files into stagging 
-$ git add . 
 or 
-$ git add specific_files
 
-# Commit the changes
-$ git commit -m "Message"
+# Initialize a Git Repository
+```sh
+git init                   # Initialize a new Git repository
+```
 
-# Check Log
-$ git log ---oneline
+# Check Repository Status
+```sh
+git status                 # Show the working tree status
+```
 
-# Check diff in same file 
-$ git diff --staged or git diff commit1 commit2
+# Add Files to Staging Area
+```sh
+git add .                  # Stage all changes
+git add <file1> <file2>    # Stage specific files
+```
+
+# Commit Changes
+```sh
+git commit -m "Message"    # Commit staged changes with a message
+```
+
+# View Commit History
+```sh
+git log --oneline          # Show a summarized commit history
+git log                    # Show detailed commit history
+```
+
+# View Differences
+```sh
+git diff                   # Show unstaged changes
+git diff --staged          # Show staged changes
+git diff <commit1> <commit2> # Show diff between two commits
+```
+
+# Basic Workflow Example
+1. Initialize repository: `git init`
+2. Check status: `git status`
+3. Add files: `git add .` or `git add <file>`
+4. Commit: `git commit -m "Initial commit"`
+5. View log: `git log --oneline`
+6. View changes: `git diff`
 
