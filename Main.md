@@ -1,3 +1,27 @@
+# Working with Remote Branches
+
+## Push Local Branch to Remote
+```sh
+git push origin <branch_name>           # Push local branch to remote
+git push -u origin <branch_name>        # Push and set upstream tracking
+```
+
+## Switch to a Remote Branch
+```sh
+git fetch origin                        # Fetch latest branches from remote
+git switch <remote_branch>              # Switch to a remote branch (if already tracked)
+git checkout -b <branch_name> origin/<branch_name>  # Create and switch to a local branch tracking remote
+```
+
+## List Remote Branches
+```sh
+git branch -r                           # List all remote branches
+```
+
+## Delete Remote Branch
+```sh
+git push origin --delete <branch_name>  # Delete a branch from remote
+```
 or 
 
 # Initialize a Git Repository
